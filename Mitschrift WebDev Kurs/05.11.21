@@ -1,0 +1,13 @@
+HTML Layout - Boxe
+
+-divs benutzen im body!
+- mehrere css boxen mit .class oder mit #id
+
+Absolute maße / relative maße
+
+- mit px = absolut
+- mit % = relative
+- vw viewport width / height
+- rem
+
+

@@ -1,0 +1,72 @@
+div {
+  background-color: #9b9b9bd5;
+  margin: 125px;
+  padding-right: 125px;
+  padding-left: 125px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: black;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+div.first {
+  color: #fff;
+  background-color: #d8c51bd5;
+  border: 1px solid #00b0a6;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-color: black;
+  border-radius: 10px;
+  margin: 125px;
+  display: flex;
+  justify-content: center;
+}
+
+div.second {
+  color: #fff;
+  background-color: #d8c51bd5;
+  border: 1px solid #00b0a6;
+  padding: 25%;
+  border-color: black;
+  border-radius: 10px;
+  margin: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.box1 {
+  color: #fff;
+  background-color: #00b0a6;
+  padding: 50px;
+  border: 1px solid #00b0a6;
+  border-color: black;
+  border-radius: 10px;
+  margin: 50px;
+  width: 25px;
+}
+div.box2 {
+  color: #fff;
+  background-color: #00b0a6;
+  padding: 50px;
+  border: 1px solid #00b0a6;
+  border-color: black;
+  border-radius: 10px;
+  margin: 50px;
+  width: 25px;
+}
+
+div.box3 {
+  color: #fff;
+  background-color: #00b0a6;
+  padding: 50px;
+  border: 1px solid #00b0a6;
+  border-color: black;
+  border-radius: 10px;
+  margin: 50px;
+  width: 25px;
+}

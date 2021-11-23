@@ -1,0 +1,130 @@
+body {
+  background-color: #f2edd0;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 400px;
+  border-radius: 20px;
+}
+h1 {
+  color: #bfb73f;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+main {
+  background-color: #d9ba5f;
+  width: 700px;
+  margin: 32px auto;
+  padding: 28px;
+  color: #f2f2f2;
+  font-size: 18px;
+  border-radius: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.button1 {
+  color: #643704;
+  background-color: #d19545;
+  border-color: black;
+  text-align: center;
+  cursor: pointer;
+  border: 0px solid #030505;
+  font-size: 20px;
+  border-radius: 3px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
+  transition: 0.5s linear;
+}
+
+.button2 {
+  background-color: #d19545;
+  border-color: black;
+  text-align: center;
+  cursor: pointer;
+  border: 20px solid #d19545;
+  padding: 4px 15px;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #643704;
+  font-weight: bold;
+}
+
+.button3 {
+  background-color: #d19545;
+  border-color: black;
+  text-align: center;
+  cursor: pointer;
+  border: 0px solid #030505;
+  padding: 4px 15px;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: #643704;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+li {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+A:link {
+  background-color: rgb(218, 164, 93);
+  text-decoration: none;
+  font-weight: none;
+  color: black;
+  border-radius: 10px;
+}
+
+A:hover {
+  color: rgb(95, 56, 25);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s linear;
+  padding: 6px 14px;
+}
+
+.extra-important {
+  color: #643704;
+  font-weight: bold;
+  border-left: 2px solid rgb(81, 150, 81);
+  padding-bottom: 5px;
+}
+
+button:hover {
+  color: rgb(252, 113, 33);
+  border-color: chartreuse;
+  background-color: chartreuse;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s linear;
+}
+
+.divbutton {
+  text-align: center;
+}

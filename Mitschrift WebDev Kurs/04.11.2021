@@ -1,0 +1,32 @@
+Was macht ein WebDev
+-Applikationen im Hintergrund
+
+Wie funktioniert das Web?
+-Request->Server-> Response
+
+
+Basic: HTML, CSS, JavaScript
+HTML: sagt was auf dem Schirm dargestellt wird
+CSS: Styling der Website
+JS: Macht die Seite dynamisch/interaktiv.
+
+Erste Seite (HTML&CSS)
+Was wird benötigt?
+-Server
+Browser?
+-Chrome, Firefox
+HTML Datei
+-Gewöhnliche Textdatei mit .html
+
+Erstelle "Hello World!" Website.
+
+Welche HTML Elemente gibt es?
+- Elemente geben den Inhalten eine Struktur
+-Wichtig für Aufbau für
+	-Besucher
+	-Search-Engine Crawler
+	-Barrierefreiheit(zB Screen Readers)
+-Vollständige Liste der Elemente: developer.mozilla.org/de/docs/Web/HTML/Element
+
+
+Erste Website state of the art, Spielerei, general css internal, external

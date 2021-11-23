@@ -1,0 +1,23 @@
+Daniel übernimmt für Martin
+
+- vorstellung
+- wiederholung html/css
+digicampus - pw:Raphaelly.Largo92!
+
+File Name Conventions HTML
+Best-Practice die man befolgen sollte.
+- index.html
+
+object-fit: cover; - um images nicht zu verzerren
+
+css: body.home
+	  ^		^- definiert die klasse home
+	definiert den body
+	
+specificity calculator
+css welche tribute haben mehr priorität /selektoren
+
+- von anderen websites inspiration holen via google dev tool
+
+content box - border box
+damit padding nicht abgezogen wird
