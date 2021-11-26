@@ -1,0 +1,107 @@
+#main-header {
+  height: 80px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+#main-header a {
+  text-decoration: none;
+}
+
+#logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #555555;
+  text-transform: uppercase;
+}
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#main-nav ul li {
+  margin: 0 16px;
+}
+
+#main-nav ul li a {
+  color: #555555;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: lightblue;
+    max-width: 1000px;
+  }
+  h1 {
+    font-size: 32px;
+    color: rgb #555555;
+  }
+  .Product {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 28px;
+  }
+
+  .Product-header {
+    display: flex;
+    justify-content: center;
+  }
+  .Product-content {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .borderinformation {
+    background-color: rgb(187, 187, 187);
+    border-radius: 5px;
+  }
+  .image-container-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Preis {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+  .buttonshop {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #767a7a;
+    border-color: black;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #767a7a;
+    padding: 4px 15px;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+}
