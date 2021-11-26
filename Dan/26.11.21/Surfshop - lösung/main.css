@@ -1,0 +1,30 @@
+.navbar-drawer {
+  display: none;
+}
+
+:root {
+  --bss-blue: #4cc2c0;
+  --bss-light-blue: #8bdada;
+  --bss-white: #fcf5e2;
+  --bss-yellow: #fecb75;
+  --bss-red: #fd5c5a;
+}
+
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("./public/fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("./public/fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url("./public/fonts/Ubuntu-Regular.ttf");
+}
+.logo-container {
+  font-family: Pacifico-Regular;
+  background-color: var(--bss-blue);
+}
