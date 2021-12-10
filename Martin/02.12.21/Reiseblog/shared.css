@@ -1,0 +1,79 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+#page-logo a {
+  font-family: "Oleo Script", sans-serif;
+  font-size: 40px;
+  color: yellow;
+  text-decoration: none;
+  text-transform: lowercase;
+  display: flex;
+  text-shadow: 1px 1px 2px black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header li {
+  font-family: "Quicksand 300", sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: yellow;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding: 2px;
+}
+
+#places {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 40px;
+  margin: auto;
+}
+
+.destination {
+  margin: 0 20px;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.destinations img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(39, 38, 38);
+}
+
+.destination p {
+  text-align: center;
+  font-size: 24px;
+  color: grey;
+  margin: 20px 0;
+}
+
+#highlights h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#highlights {
+  display: flex;
+}

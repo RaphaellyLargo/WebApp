@@ -1,0 +1,109 @@
+.container1 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 1fr;
+  width: 1fr;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: rgb(255, 255, 255);
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.container2 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 1fr;
+  width: 1fr;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: rgb(255, 255, 255);
+  grid-row: 1 / 1;
+  grid-column: 2 / 3;
+}
+
+.container3 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 1fr;
+  width: 1fr;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: rgb(255, 255, 255);
+  grid-row: 2 / 2;
+  grid-column: 1 / 3;
+}
+
+.container4 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 1fr;
+  width: 1fr;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: rgb(255, 255, 255);
+}
+
+.container5 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  height: 1fr;
+  width: 1fr;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background-color: rgb(255, 255, 255);
+}
+.image {
+  grid-row: 1 / 1;
+  grid-column: 1 / 2;
+}
+.image img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.text {
+  grid-row: 1 / 2;
+  grid-column: 2 / 2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.text a {
+  text-align: right;
+  text-decoration: none;
+  color: rgb(183, 230, 235);
+  margin-bottom: 10px;
+}
+
+a:hover {
+  color: aqua;
+}

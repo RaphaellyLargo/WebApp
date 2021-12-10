@@ -1,0 +1,26 @@
+#page-logo a {
+  color: rgb(183, 230, 235);
+}
+
+header a {
+  color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
+
+body {
+  background-color: rgb(77, 77, 77);
+  color: rgb(68, 68, 68);
+}
+
+.grid {
+  height: 1000px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: auto;
+}

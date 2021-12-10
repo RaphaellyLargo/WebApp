@@ -1,0 +1,392 @@
+.container {
+  height: 1000px;
+  max-width: 1400px;
+  display: grid;
+  grid-row: 1 / 9;
+  grid-column: 1 / 10;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "nineteen twenty-three twenty-three two two"
+    "two two sixteen eighteen"
+    "nineteen twenty-two two two"
+    "six six fifteen three three"
+    "eleven eleven eleven fourteen five five";
+  border: 10px solid rgb(95, 67, 15);
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 20px;
+
+  /* keep 1:1 ratio of advent-calendar */
+  aspect-ratio: 1;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 95vh;
+  max-height: 95vw;
+}
+
+div[class^="box"] {
+  border: 1px solid #000;
+
+  /* center content in boxes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*row 1 */
+.box1 {
+  grid-area: nineteen;
+  grid-row: 1 / 3;
+  grid-column: 1 / 4;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  grid-area: twenty-three;
+  grid-row: 1 / 3;
+  grid-column: 4 / 6;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  grid-area: twenty-three;
+  grid-row: 1 / 3;
+  grid-column: 6/ 7;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box4 {
+  grid-area: two;
+  grid-row: 1 / 2;
+  grid-column: 7 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box5 {
+  grid-area: two;
+  grid-row: 2 / 3;
+  grid-column: 7 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*end row 1 */
+
+/*row 2 */
+.box6 {
+  grid-area: two;
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box7 {
+  grid-area: two;
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box8 {
+  grid-area: sixteen;
+  grid-row: 3 / 5;
+  grid-column: 4 / 9;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box9 {
+  grid-area: eighteen;
+  grid-row: 3 / 5;
+  grid-column: 9 / 9;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*end row 2 */
+
+/*row 3 */
+.box10 {
+  grid-area: nineteen;
+  grid-row: 5 / 7;
+  grid-column: 1 / 4;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box11 {
+  grid-area: twenty-two;
+  grid-row: 5 / 7;
+  grid-column: 4 / 6;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Fotos/Advent (20).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.box12 {
+  grid-area: two;
+  grid-row: 5 / 6;
+  grid-column: 6 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box13 {
+  grid-area: two;
+  grid-row: 6 / 7;
+  grid-column: 6/ 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*end row 3 */
+
+/*row 4 */
+.box14 {
+  grid-area: six;
+  grid-row: 7 / 7;
+  grid-column: 1 / 6;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box15 {
+  grid-area: six;
+  grid-row: 8 / 8;
+  grid-column: 1 / 6;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box16 {
+  grid-area: fifteen;
+  grid-row: 7 / 9;
+  grid-column: 6 / 8;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box17 {
+  grid-area: three;
+  grid-row: 7 / 9;
+  grid-column: 8/ 9;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box18 {
+  grid-area: three;
+  grid-row: 7 / 9;
+  grid-column: 9 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*end row 4 */
+
+/*row 5 */
+.box19 {
+  grid-area: eleven;
+  grid-row: 9 / 11;
+  grid-column: 1 / 1;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box20 {
+  grid-area: eleven;
+  grid-row: 9 / 11;
+  grid-column: 2 / 2;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box21 {
+  grid-area: eleven;
+  grid-row: 9 / 11;
+  grid-column: 3 / 3;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box22 {
+  grid-area: fourteen;
+  grid-row: 9 / 11;
+  grid-column: 4 / 6;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box23 {
+  grid-area: five;
+  grid-row: 9 / 10;
+  grid-column: 6 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box24 {
+  grid-area: five;
+  grid-row: 10 / 11;
+  grid-column: 6 / 10;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*end row 5 */
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  background-color: #165b33;
+}
+
+.box6,
+.box7,
+.box8,
+.box9,
+.box10 {
+  background-color: #146b3a;
+}
+
+.box11,
+.box12,
+.box13,
+.box14,
+.box15 {
+  background-color: #f8b229;
+}
+
+.box16,
+.box17,
+.box18,
+.box19,
+.box20 {
+  background-color: #ea4630;
+}
+
+.box21,
+.box22,
+.box23,
+.box24 {
+  background-color: #bb2528;
+}
+
+@media only screen and (min-width: 600px) {
+  .advent-calendar {
+    font-size: 30px;
+    min-width: 450px;
+    min-height: 450px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .advent-calendar {
+    font-size: 40px;
+    min-width: 600px;
+    min-height: 600px;
+  }
+}

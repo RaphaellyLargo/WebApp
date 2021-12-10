@@ -1,0 +1,7 @@
+static
+relative
+fixed
+absolute
+sticky
+
+https://www.w3schools.com/css/css_positioning.asp

@@ -1,8 +1,60 @@
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("./public/fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("./public/fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url("./public/fonts/Ubuntu-Regular.ttf");
+}
+
 body {
   margin: 0;
 }
 
+#hero {
+  height: 1500px;
+  background-image: url("./surfboards.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.hero-content {
+  width: 150px;
+  height: 100px;
+  background-color: rgba(26, 179, 240, 0.541);
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 750px;
+  color: aliceblue;
+  border-radius: 10px;
+  border: 10px black;
+}
+
+input {
+  border-radius: 5px;
+  padding: 6px 24px;
+  margin: 0;
+  border: none;
+}
+
+.hero-content a {
+  text-decoration: none;
+  color: deeppink;
+  text-transform: uppercase;
+}
+
 #main-header {
+  position: fixed;
+  width: 100%;
   height: 80px;
   background-color: #4cc2c0;
   display: flex;
@@ -21,14 +73,26 @@ body {
   color: rgb(55, 55, 55);
 }
 
+#logopic {
+  width: 150px;
+  height: 100px;
+  background-color: rgba(43, 39, 39, 0.466);
+  margin: 0 auto;
+  position: relative;
+  top: 750px;
+}
 .search-container {
-  display: flex;
   justify-content: center;
 }
+.fa-search {
+  position: absolute;
+  top: 30px;
+}
+
 #main-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-right: 100px;
   display: flex;
 }
 
@@ -41,11 +105,6 @@ body {
 #main-nav ul li a {
   color: rgb(255, 255, 255);
   font-size: 20px;
-}
-
-@font-face {
-  font-family: Pacifico-Regular;
-  src: url("./public/fonts/Pacifico-Regular.ttf");
 }
 
 #logo {
