@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: absolute;
+  background-color: whitesmoke;
+  min-height: 480px;
+  width: 768px;
+  max-width: 100%;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.form-container {
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  padding: 0 50px;
+}
+.sign-in-container {
+  width: 50%;
+  z-index: 2;
+}
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 0;
+  opacity: 0;
+}
+.overlay-container {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  z-index: 100;
+}
+.overlay {
+  position: absolute;
+  color: indianred;
+  width: 200%;
+  height: 100%;
+  left: -100%;
+  background: plum;
+}
+.overlay-panel {
+  background-color: lightgreen;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-left {
+}
+.overlay-right {
+}
+button {
+  color: black;
+}
+button:active {
+  transform: scale(0.95);
+}

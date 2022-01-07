@@ -1,6 +1,6 @@
 @font-face {
   font-family: Pacifico-Regular;
-  src: url("./public/fonts/Pacifico-Regular.ttf");
+  src: url("./public/fonts/Ubuntu-Bold.ttf");
 }
 
 @font-face {
@@ -19,24 +19,42 @@ body {
 
 #hero {
   height: 1500px;
+  width: auto;
   background-image: url("./surfboards.jpg");
   background-position: center;
   background-size: cover;
-  display: flex;
 }
 
-.hero-content {
-  width: 150px;
-  height: 100px;
-  background-color: rgba(26, 179, 240, 0.541);
+#hero-content {
+  width: 500px;
+  height: 250px;
+  border: 1px solid #ccc;
+  background-color: rgba(23, 105, 199, 0.459);
+  border-radius: 5px;
   text-align: center;
-  padding: 50px 0;
+  padding: 15px 0;
   margin: 0 auto;
   position: relative;
-  top: 750px;
-  color: aliceblue;
-  border-radius: 10px;
-  border: 10px black;
+  top: 600px;
+  font-family: Ubuntu-Regular;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#hero-content h1 {
+  color: #f6bd60;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+#hero-content p {
+  color: #f7ede2;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 32px;
 }
 
 input {
@@ -46,16 +64,11 @@ input {
   border: none;
 }
 
-.hero-content a {
-  text-decoration: none;
-  color: deeppink;
-  text-transform: uppercase;
-}
-
 #main-header {
   position: fixed;
   width: 100%;
   height: 80px;
+  z-index: 10;
   background-color: #4cc2c0;
   display: flex;
   align-items: center;
