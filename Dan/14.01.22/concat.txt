@@ -1,0 +1,6 @@
+verbindet 2 strings miteinander
+
+let result = water.concat(pot)
+
+pot = "in pot";
+water = "water ";

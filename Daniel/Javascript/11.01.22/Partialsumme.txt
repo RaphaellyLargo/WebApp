@@ -1,0 +1,12 @@
+Aufgabe Partialsumme einer Zahl berechnen, 2.0. 3=> 1+2+3=6
+
+Teilprobleme
+	Eingabe: über prompt
+	Partialsumme berechnen
+	Ausgabe mit getlElementByID
+
+11 1+2+3+4+5+6+7+8+9+10+11=66
+1 1=1
+7 1+2+3+4+5+6+7=28
+
+Kopfgesteuerte Schleife

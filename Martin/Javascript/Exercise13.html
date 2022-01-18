@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function multiplyWithIndex(baseNumber) {
+        const startIndex = 2;
+        const endIndex = 16;
+
+        for (let i = startIndex; i <= endIndex; i += 2) {
+          const result = baseNumber * i;
+          console.log(`${baseNumber} multipliziert mit ${i} = ${result}`);
+        }
+      }
+      multiplyWithIndex(2);
+    </script>
+  </head>
+  <body></body>
+</html>
