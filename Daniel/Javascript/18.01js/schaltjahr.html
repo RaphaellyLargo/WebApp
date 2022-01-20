@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Schaltjahr</title>
+  </head>
+  <body>
+    <script src="schaltjahr.js"></script>
+    <form name="schalt" action="">
+      <table border="1">
+        <tr>
+          <td>Ist folgendes Jahr ein Schaltjahr?</td>
+          <td><input type="text" name="jahr" value="" size="10" /></td>
+          <td>
+            <input
+              type="button"
+              name="prf"
+              value="Prüfe"
+              onclick="ergebnis.value=schaltJahr(jahr.value)"
+            />
+          </td>
+          <td><input type="text" name="ergebnis" value="" size="20" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

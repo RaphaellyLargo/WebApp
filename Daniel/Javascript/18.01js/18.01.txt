@@ -1,0 +1,2 @@
+Pluralizer Try and error
+debugging in DevTools -> sources debugger
