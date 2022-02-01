@@ -1,0 +1,34 @@
+Anforderungen:
+
+User(Keyuser)
+Kunde,Stakeholder
+<->
+Business Analyst,
+Product Designer
+Product Manager
+
+<->
+
+Analyse + Design:
+
+Developer
+Analysten
+Senior Devs
+
+<->
+Backlog
+
+Entwicklung:
+
+Scrum
+Kahbum			Agil
+Waterfall
+
+<->
+
+Planen->Entwickeln->Testen->Review
+
+
+QA Tester/Team -> Deployment (DevOps(Engineer)) -> Abnahme
+
+
