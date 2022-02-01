@@ -8,6 +8,8 @@ let images = [
 ];
 let dice = document.querySelectorAll("img");
 
+let iRollDice;
+
 function roll() {
   dice.forEach(function (die) {
     die.classList.add("shake");
@@ -16,11 +18,24 @@ function roll() {
     dice.forEach(function (die) {
       die.classList.remove("shake");
     });
-    let dieOneValue = Math.floor(Math.random() * 6);
 
-    console.log(dieOneValue);
-    document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
+    
+
+    let iRollDice;
+    iRollDice = prompt("Wie oft Würfeln?",10);
+    for (i=1; i<=iRollDice; i++
+      ){
+        iRandomNumber = Math.ceil(Math.random()*6);
+        console.log(iRandomNumber);
+      }
+
+    
+    
+
+    console.log(iRandomNumber);
+    document.querySelector("#die-1").setAttribute("src", images[iRandomNumber]);
     document.querySelector("#total").innerHTML =
-      "Your roll is " + (dieOneValue + 1);
+      "Your roll is " + (iRandomNumber + 1);
   }, 1000);
 }
+
