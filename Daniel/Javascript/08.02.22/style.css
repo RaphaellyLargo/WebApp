@@ -1,3 +1,8 @@
+body {
+  width: 800px;
+  height: 800px;
+}
+
 #list {
   background-color: rgb(255, 255, 255);
 
@@ -5,13 +10,30 @@
   flex-direction: column;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 .onclickevent {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
 }
 
 img {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#name {
+  font-size: 40px;
+}
+#birthday {
+  font-size: 40px;
+}
+#key {
+  font-size: 40px;
+}
+#list {
+  font-size: 20px;
 }
