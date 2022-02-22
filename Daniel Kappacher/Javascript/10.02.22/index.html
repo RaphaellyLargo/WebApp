@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="budget.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>Budget Calculator</h1>
+
+        <h2>Budget</h2>
+
+        <form id="budget-form">
+          <div>
+            <label for="budget">Budget</label><br />
+            <input type="number" name="budget" id="budget" />
+          </div>
+          <button type="button" id="submit-budget">Budget übernehmen</button>
+        </form>
+
+        <h2>Ausgaben</h2>
+        <form id="expenses-form">
+          <div>
+            <label for="expenses-form">Ausgaben</label><br />
+            <input type="expenses-form" name="budget" id="expense" />
+          </div>
+          <div>
+            <label for="expenses-amount">Betrag</label><br />
+            <input
+              type="expenses-amount"
+              name="expenses-amount"
+              id="expenses-amount"
+            />
+          </div>
+          <button type="button" id="submit-expense">Ausgabe speichern</button>
+        </form>
+
+        <form id="ergebnis">
+          <h2>Ergebnis</h2>
+          <div>
+            <label for="budget-output">Budget:</label>
+          </div>
+          <div>
+            <label for="expenses-output">Ausgaben:</label>
+          </div>
+          <hr />
+        </form>
+
+        <label for="expenses-total">Restbetrag:</label>
+      </div>
+    </div>
+  </body>
+</html>
