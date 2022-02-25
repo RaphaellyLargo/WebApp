@@ -114,3 +114,82 @@ if (num % 15 === 0) {
   console.log(num);
 }
 */
+
+//for loops
+
+//for(let i = 0; i < 10; i++) {
+//  //code
+//  console.log(i)
+//}
+
+//for loop with fizzbuzz
+
+//for (let num = 1; num < 101; num++) {
+//  //code
+//  if (num % 15 === 0) {
+//    console.log("fizzbuzz");
+//  } else if(num % 5 === 0) {
+//    console.log("buzz");
+//  } else if(num % 3 === 0) {
+//    console.log("fizz");
+//  } else {
+//    console.log(num)
+//  }
+//}
+
+//arrays
+//console.log(books.length) // outputs items in the array
+
+//let books = ["Moby Dick", "Life of Pi", "Sapiens", "test1", "test2", "test3"];
+//
+//let count = 0;
+//for (let i = 0; i < books.length; i++) {
+//  console.log(books[i])
+//  if (books[i] === "Sapiens") {
+//    count = count + 1
+//    console.log(count)
+//  }
+//}
+//
+
+//objects
+
+//const user = {
+//  name: 'Raphy',
+//  lastName: 'Largo',
+//  pets: false
+//}
+//
+//console.log(user) // with user.name u can output only the name
+
+// Functions
+
+//function sendText(name, time) {
+//  console.log('Hey ' + name + ' do you want to hang out at ' + time + '?')
+// }
+//
+// sendText('Bobby', 10)
+// sendText('Danny', 8)
+// sendText('Amy', 5)
+// sendText('Farooq', 1)
+
+//function sendReminder(name, time) {
+//  console.log('Dear ' + name + ' your meeting is at ' + time)
+// }
+//
+// sendReminder('Farooq', 4)
+// sendReminder('Bobby', 10)
+// sendReminder('Danny', 8)
+// sendReminder('Amy', 5)
+
+//let name = 'Raphy'
+//let count = 1
+//
+//function showAlert() {
+//  console.log('Hey ' + name + ', wake up! This is alarm number ' + count + '!')
+//  count += 1
+//}
+//
+//showAlert()
+//showAlert()
+//showAlert()
