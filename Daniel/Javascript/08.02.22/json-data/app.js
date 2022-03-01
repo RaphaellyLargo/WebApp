@@ -79,6 +79,14 @@ async function createEmployee() {
 }
 
 async function deleteEmployee(employeeKey) {
-  // TODO call DELETE API
-  // http://localhost:3000/employees?key=employeeKey"
+  const request = new Request(
+    `http://localhost:3000/employees?key=${employeeKey}`,
+    {
+      method: "DELETE",
+      mode: "cors",
+    }
+  );
+  await fetch(request);
+
+  await loadEmployeelist();
 }
