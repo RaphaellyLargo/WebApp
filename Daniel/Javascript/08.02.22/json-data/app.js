@@ -1,3 +1,5 @@
+const { isAsyncFunction } = require("util/types");
+
 async function startApp() {
   console.log("--- Employee Management ---");
   await loadEmployeelist();
@@ -49,6 +51,8 @@ function renderDetail(employee) {
       month: "long",
       year: "numeric",
     });
+  document.getElementById("delete").onclick = () =>
+    deleteEmployee(employee.key);
 }
 
 async function createEmployee() {
@@ -72,4 +76,9 @@ async function createEmployee() {
     mode: "cors",
   });
   loadEmployeelist();
+}
+
+async function deleteEmployee(employeeKey) {
+  // TODO call DELETE API
+  // http://localhost:3000/employees?key=employeeKey"
 }
