@@ -1,13 +1,17 @@
 async function startApp() {
   console.log("--- Employee Management ---");
+  await loadEmployeelist();
+}
+
+async function loadEmployeelist() {
+  const listElement = document.getElementById("list");
+  listElement.innerHTML = null;
   const employees = await loadEmployeesAsync();
   renderEmployeeList(employees);
 }
 
 async function loadEmployeesAsync() {
-  const response = await fetch(
-    "http://127.0.0.1:5500/json-data/employees.json"
-  );
+  const response = await fetch("http://localhost:3000/employees");
   const employees = await response.json();
   return employees;
 }
@@ -45,4 +49,27 @@ function renderDetail(employee) {
       month: "long",
       year: "numeric",
     });
+}
+
+async function createEmployee() {
+  const firstName = document.getElementById("firstNameInput").value;
+  const lastName = document.getElementById("lastNameInput").value;
+  const key = document.getElementById("keyInput").value;
+  const dateOfBirth = document.getElementById("dateOfBirthInput").value;
+
+  await fetch("http://localhost:3000/employees", {
+    method: "POST",
+    body: JSON.stringify({
+      firstName,
+      lastName,
+      key,
+      dateOfBirth,
+      image: "placeholder.gif",
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    mode: "cors",
+  });
+  loadEmployeelist();
 }
