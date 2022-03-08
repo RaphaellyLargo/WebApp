@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee - list</title>
     <script src="index.js"></script>
+    <script src="confetti.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="startApp()">
+    <form>
+      <label for="count">Confetti Count</label>
+      <input type="number" name="count" id="count" />
+      <input
+        type="button"
+        onclick="confetti(document.getElementById('count').value)"
+        value="GO"
+      />
+    </form>
+    
     <h1>Employee file</h1>
 
     
