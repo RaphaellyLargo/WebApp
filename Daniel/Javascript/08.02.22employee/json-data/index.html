@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="startApp()">
+    <form>
+      <label for="count">Confetti Count</label>
+      <input type="number" name="count" id="count" />
+      <input
+        type="button"
+        onclick="confetti(document.getElementById('count').value)"
+        value="GO"
+      />
+    </form>
     <h1>Employee Management</h1>
     <div class="content">
       <div id="list"></div>
