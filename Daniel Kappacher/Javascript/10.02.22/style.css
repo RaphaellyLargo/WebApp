@@ -1,0 +1,43 @@
+body {
+  background-color: lightgray;
+}
+
+#sectionBudget {
+  border: 0.15rem;
+  border-style: solid;
+  border-color: Green;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 400px;
+}
+
+#sectionExpense {
+  border: 0.15rem solid var(--mainGreen);
+  border-style: solid;
+  border-color: rgb(163, 22, 3);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  width: 400px;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+}
+
+.budgetandoutput {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+#sectionBudget {
+}
+
+#sectionExpense {
+}
+
+.invalid-input {
+  border-color: red;
+}

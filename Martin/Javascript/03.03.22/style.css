@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  column-gap: 20px;
+  height: 80vh;
+  max-height: 80vh;
+}
+
+#drink-list,
+#drink-detail {
+  width: 50%;
+}
+
+#drink-list {
+  overflow-y: scroll;
+}
+
+.card {
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+img {
+  max-width: 300px;
+}
+.card:hover {
+  background-color: gray;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar Verschlüsselung</title>
+  </head>
+  <body>
+    <h1>Caesar Verschlüsselung</h1>
+
+    <form action="index.js">
+    <label for="key">Gib den zu verschlüsselten Text ein:</label>
+    <textarea id="text-input" name="caesar" rows="8" cols="140">
+
+      </textarea>
+      <form>
+
+          Wähle deinen Schlüssel:
+        <select onChange="alert('Es wurde Index '+this.selectedIndex+' gewählt');">
+            <option>1
+            </option>
+            <option>2
+            </option>
+            <option>3
+            </option>
+            <option>4
+            </option>
+        </select>
+      </form>
+      <br><br>
+      <input type="button" value="Encrypt" class="encrypt-button" onclick="caesar()"/>
+    </form>
+  </form>
+<br><br>
+
+  <form action="index.js">
+    <label for="caesar">Der Verschlüsselte Text:</label>
+    <textarea id="text-output" readonly name="caesar" rows="8" cols="140">
+      </textarea>
+      <form>
+          <br><br>
+        <input type="button" value="Decrypt" class="decrypt-button" onclick="caesar()"/>
+  </body>
+</html>

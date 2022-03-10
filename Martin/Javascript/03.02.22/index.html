@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMExercise</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="containerbg">
+      <div class="content">
+        <h1>Post hinzufügen</h1>
+        <p>
+          <label for="titel">Titel:</label>
+        </p>
+        <textarea id="titel" name="titel" rows="1" cols="100"></textarea>
+        <p>
+          <label for="text" id="textcount">Text: </label
+          ><span id="charcount"></span>
+        </p>
+        <textarea
+          id="textbox"
+          onkeyup="charcountupdate(this.value)"
+          name="text"
+          rows="4"
+          cols="100"
+          maxlength="140"
+        ></textarea>
+        <p><button>Post erstellen</button></p>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

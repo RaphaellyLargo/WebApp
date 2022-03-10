@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="startApp()">
+    <form>
+      <label for="count">Confetti Count</label>
+      <input type="number" name="count" id="count" />
+      <input
+        type="button"
+        onclick="confetti(document.getElementById('count').value)"
+        value="GO"
+      />
+    </form>
+    <h1>Employee Management</h1>
+    <div class="content">
+      <div id="list"></div>
+      <div id="detail">
+        <input id="delete" type="button" value="Delete" />
+        <h2 id="name"></h2>
+        <img id="avatar" src="placeholder.gif" />
+        <div id="key"></div>
+        <div id="birthday"></div>
+      </div>
+    </div>
+    <div class="add">
+      <form>
+        <label for="firstName">Firstname</label>
+        <input type="text" name="firstName" id="firstNameInput" />
+        <label for="lastName">Lastname</label>
+        <input type="text" name="lastName" id="lastNameInput" />
+        <label for="key">Key</label>
+        <input type="text" name="key" id="keyInput" />
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirthInput" />
+        <input type="button" value="Save Employee" onclick="createEmployee()" />
+      </form>
+    </div>
+  </body>
+</html>
