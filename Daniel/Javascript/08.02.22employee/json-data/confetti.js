@@ -84,3 +84,7 @@ function randomConfetti(body) {
   confettiContainer.appendChild(confettiBody);
   body.appendChild(confettiContainer);
 }
+
+function logReset(event) {
+  log.textContent = `Form reset! Time stamp: ${event.timeStamp}`;
+}

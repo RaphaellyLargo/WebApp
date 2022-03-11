@@ -1,3 +1,32 @@
+class Employee {
+  constructor(firstName, lastName, key, dateOfBirth, image) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.key = key;
+    this.dateOfBirth = new Date(dateOfBirth);
+    this.image = image;
+  }
+
+  /**
+   * Calculate
+   * @returns the age of the employee in years (number)
+   */
+  getAge() {
+    const now = new Date();
+    const age = now.getFullYear() - this.dateOfBirth.getFullYear();
+    return age;
+  }
+  /**
+   *
+   * @returns full name of the employee (firstName lastName)
+   */
+
+  getFullName() {
+    return `${employee.firstName} ${employee.lastName}`;
+  }
+}
+
+const { Agent } = require("http");
 const { isAsyncFunction } = require("util/types");
 
 async function startApp() {
@@ -14,7 +43,17 @@ async function loadEmployeelist() {
 
 async function loadEmployeesAsync() {
   const response = await fetch("http://localhost:3000/employees");
-  const employees = await response.json();
+  const jsonData = await response.json();
+  const employees = jsonData.map(
+    (data) =>
+      new Employee(
+        data.firstName,
+        data.lastName,
+        data.key,
+        data.dateOfBirth,
+        data.image
+      )
+  );
   return employees;
 }
 
@@ -51,6 +90,7 @@ function renderDetail(employee) {
       month: "long",
       year: "numeric",
     });
+  document.getElementById("age").innerHTML = `Age: ${employee.getAge()}`;
   document.getElementById("delete").onclick = () =>
     deleteEmployee(employee.key);
 }
