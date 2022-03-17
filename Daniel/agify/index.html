@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <title>agify api</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <label for="nameField">Name:</label>
+      <input type="textName" id="nameInput" /><br /><br />
+
+      <label for="country" id="countryInput">Choose a country</label>
+
+      <select name="countryField" id="country">
+        <option value="AT">Österreich</option>
+        <option value="CH">Schweiz</option>
+        <option value="DE">Deutschland</option>
+        <option value="LI">Liechtenstein</option>
+      </select>
+      <br /><br />
+
+      <button type="button" id="submit" onclick="submit()">
+        Guess my age!
+      </button>
+    </div>
+    <h1 id="display-age"></h1>
+  </body>
+</html>
