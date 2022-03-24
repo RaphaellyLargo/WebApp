@@ -41,3 +41,65 @@ switch (value) {
   default:
     console.log(`value is ${value} `);
 }
+
+//loops
+let condition = true;
+while (condition) {
+  console.log("first run");
+  //break;
+  condition = false;
+}
+
+do {
+  console.log("first run");
+} while (condition);
+
+//for(counter) //Anzahl
+//for-of arrays => wert
+//for-in arrays => Index
+
+//for (let index = 0; index < array.lenght; index++) {
+//  log(array[index]);
+//}
+//
+//for (const item of array) {
+//  log(item);
+//}
+//
+//for (const index in array) {
+//  if (index == 0) {
+//    continue;
+//  }
+//  log(array[index]);
+//  if (index == "1") {
+//    break;
+//  }
+//}
+//
+
+//program structures
+
+function myFunction(parameterOne, parameterTwo) {
+  //body / scope
+  console.log(`parameter: ${parameterOne}, ${parameterTwo}`); //body
+  return value;
+}
+
+class Example {
+  constructor(value) {
+    this.value = value;
+  }
+  getValue = () => this.value;
+}
+const ex = new Example("wert");
+log(ex.getValue());
+
+//utils
+
+Math.random();
+Math.PI;
+Number.parseInt("42");
+Number.MAX_VALUE;
+JSON.parse('{"hey":"ho"}');
+
+//Async
