@@ -1,19 +1,42 @@
 .list-item {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    border: 1px solid grey;
-    padding: 10px 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 10px 20px;
 }
 
 #avatar {
-    max-width: 150px;
+  max-width: 500px;
+  display: flex;
 }
 
 .content {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
 }
 
 #detail {
-    margin: 10px;
+  margin: 10px;
+  border-style: solid;
+}
+#name {
+  font-size: 50px;
+  text-align: center;
+}
+
+#key {
+  font-size: 35px;
+  text-align: center;
+}
+
+#birthday {
+  font-size: 35px;
+  text-align: center;
+}
+
+#age {
+  font-size: 35px;
+  text-align: center;
 }
