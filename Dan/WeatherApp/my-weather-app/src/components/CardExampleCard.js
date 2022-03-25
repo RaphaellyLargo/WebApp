@@ -1,0 +1,48 @@
+import React from "react";
+import "../App.css";
+import moment from "moment";
+import { Button } from "semantic-ui-react";
+
+const refresh = () => {
+  window.location.reload();
+};
+
+const CardExampleCard = ({ weatherData }) => (
+  <div className="main">
+    {" "}
+    <div className="top">
+      {" "}
+      <p className="headerWeather">{weatherData.name}</p>
+      <Button
+        className="button"
+        inverted
+        color="blue"
+        circular
+        icon="refresh"
+        onClick={refresh}
+      />
+    </div>
+    <div className="flex">
+      <p className="day">
+        {moment().format("dddd")}, <span>{moment().format("LL")}</span>
+      </p>
+      <p className="description">{weatherData.weather[0].main}</p>
+    </div>
+    <div className="flex">
+      <p className="temp">Temperatur: {weatherData.main.temp} &deg;C</p>
+      <p className="temp">Luftfeuchtigkeit: {weatherData.main.humidity} %</p>
+    </div>
+    <div className="flex">
+      <p className="sunrise-sunset">
+        Sonnenaufgang:{" "}
+        {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString("de-IN")}
+      </p>
+      <p className="sunrise-sunset">
+        Sonnenuntergang:{" "}
+        {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString("de-IN")}
+      </p>
+    </div>
+  </div>
+);
+
+export default CardExampleCard;
