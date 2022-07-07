@@ -3,8 +3,9 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import IconLabelButtons from "../buttons/appchange-button";
-import TextField from "@mui/material/TextField";
+import MoreIcon from "@mui/icons-material/MoreVert";
+import UploadButtons from "../buttons/upload-button";
+import UploadPicture from "../buttons/UploadMenu";
 import SaveButton from "../buttons/save-button";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -15,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function GridInfo() {
+export default function GridStyles() {
   return (
     <div
       style={{
@@ -27,44 +28,50 @@ export default function GridInfo() {
       }}
     >
       <Box sx={{ width: "60%" }}>
-        <h1>Theme Information</h1>
+        <h1> Styles</h1>
         <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={12} sx={{ margin: "1px" }}>
             <Item>
-              <h2>Theme Name</h2>
-              <div>
-                <TextField
-                  required
-                  id="standard-required"
-                  label="Required"
-                  defaultValue="Input Name"
-                  variant="standard"
-                />{" "}
-              </div>
+              <h2>Hochgeladen</h2>
+              <div>&nbsp;</div>
+
+              <Item
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                {" "}
+                Nein
+                <UploadPicture />
+              </Item>
+            </Item>
+          </Grid>
+
+          <Grid item xs={12} sx={{ margin: "1px" }}>
+            <Item>
+              <h2>Pfad</h2>
+              <div>&nbsp;</div>
+              <Item>styles.css</Item>
             </Item>
           </Grid>
           <Grid item xs={12} sx={{ margin: "1px" }}>
             <Item>
-              <h2>Bildschirmauflösung Gerät</h2>
-              <div>&nbsp;</div>
-              <div>480 x 272 (px)</div>
-            </Item>
-          </Grid>
-          <Grid item xs={12} sx={{ margin: "1px" }}>
-            <Item>
-              <h2>App</h2>
-              <div>&nbsp;</div>
-              <div>G7 Access App </div>
-            </Item>
-          </Grid>
-          <Grid item xs={12} sx={{ margin: "1px" }}>
-            <Item>
-              <div>&nbsp;</div>
-              <IconLabelButtons />
+              <h2>Warnungen</h2>
               <div>&nbsp;</div>
             </Item>
           </Grid>
+          <Grid item xs={12} sx={{ margin: "1px" }}></Grid>
         </Grid>
+
+        <Item
+          sx={{
+            backgroundColor: "transparent",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        ></Item>
         <Item
           sx={{
             backgroundColor: "transparent",

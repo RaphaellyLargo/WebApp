@@ -14,7 +14,6 @@ import Bilder from "./pages/toene";
 import Start from "./pages/start";
 import BackgroundImage from "./pages/backgroundimg";
 import DrawerAppBar from "./components/Navbar/DrawerAppbarResponsive";
-import TestBar from "./components/Navbar/test";
 import { AppBar } from "@mui/material";
 import SaveButton from "./components/buttons/save-button";
 
@@ -33,8 +32,6 @@ function App() {
         <Route path="/kundendateien" element={<Kundendateien />} />
       </Routes>
     </Router>
-
-    
   );
 }
 

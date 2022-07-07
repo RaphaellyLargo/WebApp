@@ -1,4 +1,5 @@
 import React from "react";
+import GridTöne from "../components/Grid/gridtöne";
 
 const Toene = () => {
   return (
@@ -15,7 +16,7 @@ const Toene = () => {
         backgroundSize: "cover",
       }}
     >
-      <h1>Töne</h1>
+      <GridTöne />
     </div>
   );
 };

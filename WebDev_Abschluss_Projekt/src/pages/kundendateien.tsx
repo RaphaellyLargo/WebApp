@@ -1,4 +1,5 @@
 import React from "react";
+import GridKunden from "../components/Grid/gridkunden";
 
 const Kundendateien = () => {
   return (
@@ -15,7 +16,7 @@ const Kundendateien = () => {
         backgroundSize: "cover",
       }}
     >
-      <h1>Kundendateien</h1>
+      <GridKunden />
     </div>
   );
 };

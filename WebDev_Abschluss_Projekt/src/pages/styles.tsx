@@ -1,4 +1,5 @@
 import React from "react";
+import GridStyles from "../components/Grid/gridstyles";
 
 const ContactUs = () => {
   return (
@@ -15,7 +16,7 @@ const ContactUs = () => {
         backgroundSize: "cover",
       }}
     >
-      <h1>Styles</h1>
+      <GridStyles />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import GridSchoner from "../components/Grid/gridschoner";
 
 const BildschirmSchoner = () => {
   return (
@@ -15,7 +16,7 @@ const BildschirmSchoner = () => {
         backgroundSize: "cover",
       }}
     >
-      <h1>Bildschirmschoner</h1>
+      <GridSchoner />
     </div>
   );
 };
