@@ -7,6 +7,7 @@ import IconLabelButtons from "../buttons/appchange-button";
 import TextField from "@mui/material/TextField";
 import UploadButtons from "../buttons/upload-button";
 import SaveButton from "../buttons/save-button";
+import KundendateiButton from "../buttons/Kundendatei-button";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -33,8 +34,9 @@ export default function GridKunden() {
           <Grid item xs={12} sx={{ margin: "1px" }}>
             <Item>
               <h2>Upload</h2>
-              <UploadButtons />
-
+              <div>&nbsp;</div>
+              <KundendateiButton />
+              <div>&nbsp;</div>
               <p>Keine Dateien</p>
             </Item>
           </Grid>
