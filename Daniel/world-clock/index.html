@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>World Clock</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="worldclock.js"></script>
+  </head>
+  <body onload="startApp()">
+    <div class="wrapper"></div>
+    <div id="clock">
+      <p class="date" id="local-time">{{ date }}</p>
+      <p class="time" id="local-date">{{ time }}</p>
+      <p class="text" id="local-timezone">DIGITAL CLOCK with Vue.js</p>
+    </div>
+    <div></div>
+    <div id="add-widget">
+      <select id="areas" onchange="setTimeZoneOptions()"></select>
+      <select id="timezones"></select>
+      <button onclick="addWidget()">Add</button>
+    </div>
+    <div id="widgets"></div>
+</div>
+  </body>
+</html>
